@@ -1,0 +1,182 @@
+/* BEGIN: general */
+body {
+    margin: 0;
+    padding: 5px;
+    background-color: #001a33;
+    color: #d5bdbd;
+}
+
+a {
+    color: #aa7272;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: #aa7272;
+    border-color: #854444;
+    border-style: none none solid none;
+    padding-bottom: 2px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #aa7272;
+    border-color: #854444;
+    border-style: none none solid none;
+}
+
+h3 {
+    font-size: 20px;
+    color: #aa7272;
+    border-color: #854444;
+    border-style: none none solid none;
+}
+
+code {
+    color: #d6b945;
+    display: inline-block;
+}
+
+blockquote {
+    border: 2px outset #006666;
+    padding-left: 6px;
+    background-color: #003566;
+}
+
+table {
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #006666;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.hidden:hover {
+    color: #d5bdbd;
+}
+/* END: general */
+
+/* BEGIN: nav */
+nav {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    max-width: 1024px;
+    text-align: center;
+}
+
+nav a {
+    color: #d5bdbd;
+
+    display: inline-block;
+
+    /* Seules la couleur du texte et les dimensions
+    de nos paragraphes auront une transition. */
+    transition-property: background-color;
+
+    /* La transition durera trois secondes. */
+    transition-duration: 0.3s;
+
+    margin-left: 1px;
+    list-style-type: none;
+    padding: 11px;
+    border: 1px solid #006666;
+    background-color: #00284d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #006699;
+}
+/* END: nav */
+
+/* BEGIN: sections */
+section {
+    border: solid 1px #006666;
+    border-radius: 10px;
+    background-color: #003566;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 720px;
+    min-width: 640px;
+    max-width: 1024px;
+}
+
+section a:visited {
+    color: #be8080;
+}
+
+section article {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #00284d;
+}
+
+section article img {
+    max-width: 100%;
+}
+
+section aside {
+    /* Seules la couleur du texte et les dimensions
+    de nos paragraphes auront une transition. */
+    transition-property: max-height;
+
+    /* La transition durera trois secondes. */
+    transition-duration: 1s;
+
+    padding: 10px;
+    border: solid 1px #006666;
+    border-radius: 10px;
+    margin: 8px;
+    width: 60px;
+    font-size: 14px;
+    background-color: #00284d;
+    max-height: 10em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    clear: left;
+}
+
+section aside:hover {
+    max-height: 100em;
+}
+/* END: sections */
+
+/* BEGIN: footer */
+footer {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 640px;
+    max-width: 1024px;
+    background-color: #00284d;
+    border: solid 1px #006666;
+    border-radius: 8px;
+}
+
+footer p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* END: footer */
+
+/* BEGIN: programming category */
+.programming pre {
+    border-style: dotted;
+    padding: 6px;
+}
+/*END: programming category */
+
