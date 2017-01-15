@@ -25,7 +25,7 @@ pub fn make_data_from_markdown(page_name: &str) -> io::Result<BTreeMap<String, J
         Ok(file) => {
             let markdown = Markdown::read_from(file);
             let mut html = Html::new(Flags::empty(), 0);
-            data.insert("content".to_string(), html.render(&markdown).to_str().unwrap()
+            data.insert("content".to_owned(), html.render(&markdown).to_str().unwrap()
                         .replace("<p><code>", "<pre><code>")
                         .replace("</code></p>", "</code></pre>").to_json());
             // I'm not happy with the way hoedown converts markdown code part into html,

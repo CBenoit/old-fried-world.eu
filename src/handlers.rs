@@ -44,7 +44,7 @@ pub fn get_category_page(req: &mut Request) -> IronResult<Response> {
 
     match data::make_data_from_markdown(&format!("{}/{}", category, page_name)[..]) {
         Ok(mut data) => {
-            data.insert("category".to_string(), category.to_json()); // this is injected as the article css class.
+            data.insert("category".to_owned(), category.to_json()); // this is injected as the article css class.
             Ok(Response::with((status::Ok, Template::new("page", data))))
         }
         Err(e) => {
