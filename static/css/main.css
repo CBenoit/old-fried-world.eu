@@ -34,8 +34,16 @@ h3 {
 }
 
 code {
-    color: #d6b945;
+    color: #D6A945;
+    padding: 0.2em;
+    background-color: #222328;
+    border-radius: 5px;
+}
+
+pre code {
     display: inline-block;
+    margin-left: 1em;
+    padding: 1em;
 }
 
 blockquote {
@@ -174,9 +182,12 @@ footer p {
 /* END: footer */
 
 /* BEGIN: programming category */
-.programming pre {
-    border-style: dotted;
-    padding: 6px;
+.programming pre code {
+    border-style: none none none groove;
+    border-width: 5px;
+    border-color: #282a2f;
+    border-radius: 0px 10px 10px 0px;
+    counter-reset: line;
 }
 /*END: programming category */
 
